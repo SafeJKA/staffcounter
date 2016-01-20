@@ -1,0 +1,273 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""manifest_ui.rc""\r\n"
+    "\r\n"
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MainWnd.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STAFF_WIZ DIALOGEX 0, 0, 290, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "StaffCounter"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,104,53,179,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,104,76,179,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,104,98,179,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Auto register all users on this PC (Terminal Server)",IDC_CHECK3,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,104,117,178,10
+    DEFPUSHBUTTON   "Register",IDOK,162,159,57,14
+    PUSHBUTTON      "Cancel",IDCANCEL,226,159,57,14
+    RTEXT           "Enter Admin e-mail :",IDC_STATIC12,7,56,91,8
+    RTEXT           "Your Name:",IDC_STATIC13,7,79,91,8
+    RTEXT           "Please wait...",IDC_STATIC4,16,134,84,8,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_STATIC2,104,136,19,18
+    LTEXT           "",IDC_STATIC3,104,132,179,22
+    EDITTEXT        IDC_EDIT3,22,152,13,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC7,"Static",SS_BITMAP,29,6,15,13
+    RTEXT           "Device ID (optional):",IDC_STATIC14,7,101,91,8,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_STAFF_WIZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING149           "StaffCounter"
+    IDS_Start_monitoring_users_list 
+                            "Start monitoring me or on selected users:"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINWND_DIALOG DIALOGEX 0, 0, 295, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Staff Counter"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,197,225,91,16
+    LTEXT           "Click View to view log files. The files aranged by date.",IDC_STA1,43,69,146,31
+    PUSHBUTTON      "View current log...",IDC_BUTTON1,281,66,7,16
+    CONTROL         "",IDC_STATIC21,"Static",SS_ETCHEDHORZ,7,107,281,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,57,281,1
+    PUSHBUTTON      "Start logging",IDC_BUTTON3,280,10,8,16
+    LTEXT           "Start monitoring me or on selected users:",IDC_STATIC9,43,10,217,18
+    LTEXT           "StaffCounter Safe v6 \nhttp://www.StaffCounter.net",IDC_STATIC3,7,222,163,19,SS_NOTIFY
+    ICON            136,IDC_STATIC15,10,69,20,20
+    ICON            134,IDC_STATIC,10,14,20,20,NOT WS_VISIBLE
+    PUSHBUTTON      "PAUSE for 30 min",IDCANCEL1,26,138,102,19,NOT WS_VISIBLE
+    PUSHBUTTON      "Options...",IDC_BUTTON2,279,120,9,16
+    LTEXT           "StaffCounter.net connection",IDC_STA3,43,118,149,24
+    CONTROL         "",IDC_STATIC22,"Static",SS_ETCHEDHORZ,7,152,281,1
+    LTEXT           "Clear logs..",IDC_STATIC1,197,81,91,8,SS_NOTIFY | NOT WS_VISIBLE
+    LTEXT           "Open log folder...",IDC_STATIC2,197,86,91,8,SS_NOTIFY
+    CONTROL         "John",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,43,32,49,10
+    ICON            137,IDC_STATIC16,10,119,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,193,281,1
+    PUSHBUTTON      "Copy...",IDC_BUTTON4,197,166,91,16
+    ICON            141,IDC_STATIC18,11,164,20,20
+    LISTBOX         IDC_LIST1,162,203,22,16,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT1,97,195,149,17,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT6,11,196,93,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Paul",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,97,32,52,10
+    CONTROL         "Alex",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,153,32,53,10
+    CONTROL         "User4",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,209,32,79,10
+    CONTROL         "User4",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,43,43,52,10
+    CONTROL         "User4",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,97,43,51,10
+    CONTROL         "User4",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,153,42,53,10
+    CONTROL         "User4",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,209,42,79,10
+    CONTROL         "",IDC_STATIC17,"Static",SS_BITMAP,36,72,20,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAINWND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        VERTGUIDE, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,6,11,1
+ PRODUCTVERSION 5,6,11,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Tesline-service"
+            VALUE "FileDescription", "StaffCounter control panel"
+            VALUE "FileVersion", "5, 7, 11, 1"
+            VALUE "InternalName", "StaffCounter"
+            VALUE "LegalCopyright", "Copyright (C) Tesline-service s.r.l. 2009-2015"
+            VALUE "OriginalFilename", "Monitoring agent.exe "
+            VALUE "ProductName", "StaffCounter"
+            VALUE "ProductVersion", "5, 6, 11, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "manifest_ui.rc"
+
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MainWnd.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
